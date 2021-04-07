@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.ct_InfoStudent">
+   <top>
+      <MenuBar prefWidth="935.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Hệ thống">
+
+          </Menu>
+          <Menu mnemonicParsing="false" text="Chức năng">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Trợ giúp">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Nhóm tác giả">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <VBox prefHeight="722.0" prefWidth="132.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <VBox prefHeight="682.0" prefWidth="202.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="682.0" prefWidth="204.0">
+               <children>
+                  <TextField fx:id="txt_HoTen" layoutX="27.0" layoutY="168.0" />
+                  <TextField fx:id="txt_Khoi" layoutX="27.0" layoutY="203.0" />
+                  <Label text="Thông tin cá nhân" />
+                  <TextField fx:id="txt_Lop" layoutX="27.0" layoutY="239.0" />
+                  <ImageView fx:id="img_Avatar" fitHeight="138.0" fitWidth="190.0" layoutX="6.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="8.0" layoutY="273.0" text="Lịch thi" />
+                  <TabPane layoutX="1.0" layoutY="291.0" prefHeight="115.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Theo ngày tháng">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="200.0">
+                                 <children>
+                                    <DatePicker layoutX="7.0" layoutY="27.0" />
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Theo môn">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ComboBox fx:id="cbo_Theomon" layoutX="14.0" layoutY="23.0" prefHeight="26.0" prefWidth="174.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <Label layoutX="9.0" layoutY="570.0" text="Chức năng" />
+                  <Button fx:id="btn_Lammoi" layoutX="9.0" layoutY="588.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" text="Làm mới" />
+                  <Button layoutX="56.0" layoutY="395.0" mnemonicParsing="false" text="Đặt lịch hẹn" />
+                  <Button layoutX="9.0" layoutY="624.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" text="Báo lỗi" />
+                  <Button layoutX="108.0" layoutY="624.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Đăng xuất" />
+                  <Button layoutX="108.0" layoutY="588.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Trở về" />
+                  <TextArea layoutX="2.0" layoutY="439.0" prefHeight="118.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="722.0" prefWidth="678.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="703.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <TabPane layoutX="32.0" layoutY="149.0" prefHeight="443.0" prefWidth="638.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Thông tin chi tiết kỳ thi">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="317.0" layoutY="75.0" text="Mã môn học:" />
+                              <TextArea layoutX="115.0" layoutY="271.0" prefHeight="65.0" prefWidth="170.0" />
+                              <TextField layoutX="115.0" layoutY="20.0" prefHeight="26.0" prefWidth="170.0" />
+                              <Label layoutX="14.0" layoutY="24.0" text="Tên kỳ thi:" />
+                              <TextField layoutX="115.0" layoutY="71.0" prefHeight="26.0" prefWidth="170.0" />
+                              <Label layoutX="14.0" layoutY="75.0" text="Môn học:" />
+                              <TextField layoutX="115.0" layoutY="124.0" prefHeight="26.0" prefWidth="170.0" />
+                              <Label layoutX="12.0" layoutY="128.0" prefHeight="11.0" prefWidth="99.0" text="Thời gian làm bài:" />
+                              <Label layoutX="12.0" layoutY="191.0" text="Tổng số câu hỏi:" />
+                              <TextField layoutX="114.0" layoutY="187.0" prefHeight="26.0" prefWidth="170.0" />
+                              <Label layoutX="11.0" layoutY="271.0" text="Thời gian mở đề:" />
+                              <Label layoutX="317.0" layoutY="24.0" text="Mã kỳ thi:" />
+                              <TextField layoutX="427.0" layoutY="20.0" prefHeight="26.0" prefWidth="170.0" />
+                              <TextField layoutX="427.0" layoutY="71.0" prefHeight="26.0" prefWidth="170.0" />
+                              <Label layoutX="317.0" layoutY="128.0" text="Tỷ lệ số câu:" />
+                              <TextField layoutX="427.0" layoutY="124.0" prefHeight="26.0" prefWidth="170.0" />
+                              <Label layoutX="317.0" layoutY="271.0" text="Thời gian đóng đề:" />
+                              <TextArea layoutX="427.0" layoutY="271.0" prefHeight="65.0" prefWidth="170.0" />
+                              <Label layoutX="317.0" layoutY="191.0" text="Người lập đề:" />
+                              <TextField layoutX="427.0" layoutY="186.0" prefHeight="26.0" prefWidth="170.0" />
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+                <Tab text="Xem kết quả thi">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                     </content></Tab>
+                  <Tab text="Thông tin cá nhân">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Button layoutX="217.0" layoutY="592.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="268.0" text="BẮT ĐẦU THI" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

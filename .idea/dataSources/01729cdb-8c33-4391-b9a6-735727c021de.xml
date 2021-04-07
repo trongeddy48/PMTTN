@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="TTN@localhost">
+<dataSource name="Microsoft SQL Server - TTN@localhost">
   <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.20">
     <root id="1">
-      <ServerVersion>13.0.5026</ServerVersion>
-      <PermissionsCheckSum>43840689887</PermissionsCheckSum>
+      <ServerVersion>15.0.2000</ServerVersion>
+      <PermissionsCheckSum>43840685535</PermissionsCheckSum>
       <Grants>0|root||1|connect sql|G
 0|root||2|view any database|G
 0|root||101|view any definition|G
@@ -14,229 +14,259 @@
 0|root||105|control server|G
 0|root||105|view any definition|G
 0|root||106|view any definition|G
+0|root||256|connect sql|G
 0|root||257|connect sql|G
 0|root||257|view any definition|G
 0|root||257|view server state|G
+0|root||258|connect sql|G
 0|root||259|connect sql|G
 0|root||260|connect sql|G
 0|root||261|connect sql|G
 0|root||262|connect sql|G
+0|root||263|alter any availability group|G
 0|root||263|connect sql|G
-0|root||264|alter any availability group|G
+0|root||263|view server state|G
 0|root||264|connect sql|G
-0|root||264|view server state|G
 0|root||265|alter any event session|G
 0|root||265|connect any database|G
 0|root||265|connect sql|G
 0|root||265|view any definition|G
 0|root||265|view server state|G
-0|root||266|connect sql|G
-0|root||267|connect sql|G
 2|||2|connect|G
 3|||2|connect|G
 4|||2|connect|G
 5|||2|connect|G
 </Grants>
     </root>
-    <database id="2" parent="1" name="TTN">
+    <database id="2" parent="1" name="Quiz_v3">
       <ObjectId>5</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="Quiz_v4">
+      <ObjectId>6</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="Quiz_v5">
+      <ObjectId>7</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="Quiz_v6">
+      <ObjectId>8</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="TTN">
+      <ObjectId>13</ObjectId>
       <PermissionsCheckSum>3196235284</PermissionsCheckSum>
-      <Grants>5|database||0|view any column encryption key definition|G
-5|database||0|view any column master key definition|G
-5|database||1|connect|G
+      <Grants>13|database||0|view any column encryption key definition|G
+13|database||0|view any column master key definition|G
+13|database||1|connect|G
 </Grants>
       <Current>1</Current>
-      <Collation>Latin1_General_CI_AS</Collation>
-      <Fingerprint>5.44279/27113B53-6B59-4B24-A8B3-E397F7CAB612@TRONGTHOAI\SQLEXPRESS</Fingerprint>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>13.44279/0D3C2CC7-2E39-4E20-9865-A277D7AAB04D@KNIGHTTEMPEST</Fingerprint>
     </database>
-    <database id="3" parent="1" name="master">
+    <database id="7" parent="1" name="ThiTracNghiem">
+      <ObjectId>9</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="ThiTracNghiem2">
+      <ObjectId>10</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="ThiTracNghiem_1603">
+      <ObjectId>11</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="10" parent="1" name="ThiTracNghiem_Chuan">
+      <ObjectId>12</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="11" parent="1" name="master">
       <ObjectId>1</ObjectId>
-      <Collation>Latin1_General_CI_AS</Collation>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
     </database>
-    <database id="4" parent="1" name="model">
+    <database id="12" parent="1" name="model">
       <ObjectId>3</ObjectId>
-      <Collation>Latin1_General_CI_AS</Collation>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
     </database>
-    <database id="5" parent="1" name="msdb">
+    <database id="13" parent="1" name="msdb">
       <ObjectId>4</ObjectId>
-      <Collation>Latin1_General_CI_AS</Collation>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
     </database>
-    <database id="6" parent="1" name="tempdb">
+    <database id="14" parent="1" name="tempdb">
       <ObjectId>2</ObjectId>
-      <Collation>Latin1_General_CI_AS</Collation>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
     </database>
-    <login id="7" parent="1" name="sa">
+    <login id="15" parent="1" name="sa">
       <ObjectId>1</ObjectId>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="8" parent="1" name="public">
+    <login id="16" parent="1" name="public">
       <ObjectId>2</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="9" parent="1" name="sysadmin">
+    <login id="17" parent="1" name="sysadmin">
       <ObjectId>3</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="10" parent="1" name="securityadmin">
+    <login id="18" parent="1" name="securityadmin">
       <ObjectId>4</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="11" parent="1" name="serveradmin">
+    <login id="19" parent="1" name="serveradmin">
       <ObjectId>5</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="12" parent="1" name="setupadmin">
+    <login id="20" parent="1" name="setupadmin">
       <ObjectId>6</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="13" parent="1" name="processadmin">
+    <login id="21" parent="1" name="processadmin">
       <ObjectId>7</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="14" parent="1" name="diskadmin">
+    <login id="22" parent="1" name="diskadmin">
       <ObjectId>8</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="15" parent="1" name="dbcreator">
+    <login id="23" parent="1" name="dbcreator">
       <ObjectId>9</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="16" parent="1" name="bulkadmin">
+    <login id="24" parent="1" name="bulkadmin">
       <ObjectId>10</ObjectId>
       <Type>server-role</Type>
       <Enabled>1</Enabled>
     </login>
-    <login id="17" parent="1" name="##MS_SQLResourceSigningCertificate##">
+    <login id="25" parent="1" name="##MS_SQLResourceSigningCertificate##">
       <ObjectId>101</ObjectId>
       <Type>certificate-mapped-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="18" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+    <login id="26" parent="1" name="##MS_SQLReplicationSigningCertificate##">
       <ObjectId>102</ObjectId>
       <Type>certificate-mapped-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="19" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+    <login id="27" parent="1" name="##MS_SQLAuthenticatorCertificate##">
       <ObjectId>103</ObjectId>
       <Type>certificate-mapped-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="20" parent="1" name="##MS_PolicySigningCertificate##">
+    <login id="28" parent="1" name="##MS_PolicySigningCertificate##">
       <ObjectId>105</ObjectId>
       <Type>certificate-mapped-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="21" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+    <login id="29" parent="1" name="##MS_SmoExtendedSigningCertificate##">
       <ObjectId>106</ObjectId>
       <Type>certificate-mapped-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="22" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+    <login id="30" parent="1" name="##MS_PolicyEventProcessingLogin##">
+      <ObjectId>256</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="31" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
       <ObjectId>257</ObjectId>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="23" parent="1" name="TRONGTHOAI\trong">
+    <login id="32" parent="1" name="##MS_AgentSigningCertificate##">
+      <ObjectId>258</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="33" parent="1" name="KNIGHTTEMPEST\thanh">
       <ObjectId>259</ObjectId>
       <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="24" parent="1" name="NT SERVICE\SQLWriter">
+    <login id="34" parent="1" name="NT SERVICE\SQLWriter">
       <ObjectId>260</ObjectId>
       <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="25" parent="1" name="NT SERVICE\Winmgmt">
+    <login id="35" parent="1" name="NT SERVICE\Winmgmt">
       <ObjectId>261</ObjectId>
       <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="26" parent="1" name="NT Service\MSSQL$SQLEXPRESS">
+    <login id="36" parent="1" name="NT Service\MSSQLSERVER">
       <ObjectId>262</ObjectId>
       <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="27" parent="1" name="BUILTIN\Users">
+    <login id="37" parent="1" name="NT AUTHORITY\SYSTEM">
       <ObjectId>263</ObjectId>
-      <Type>windows-group</Type>
+      <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="28" parent="1" name="NT AUTHORITY\SYSTEM">
+    <login id="38" parent="1" name="NT SERVICE\SQLSERVERAGENT">
       <ObjectId>264</ObjectId>
       <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="29" parent="1" name="NT SERVICE\SQLTELEMETRY$SQLEXPRESS">
+    <login id="39" parent="1" name="NT SERVICE\SQLTELEMETRY">
       <ObjectId>265</ObjectId>
       <Type>windows-login</Type>
       <Enabled>1</Enabled>
       <DefaultDatabase>master</DefaultDatabase>
     </login>
-    <login id="30" parent="1" name="##MS_PolicyEventProcessingLogin##">
-      <ObjectId>266</ObjectId>
-      <DefaultDatabase>master</DefaultDatabase>
-    </login>
-    <login id="31" parent="1" name="##MS_AgentSigningCertificate##">
-      <ObjectId>267</ObjectId>
-      <Type>certificate-mapped-login</Type>
-      <Enabled>1</Enabled>
-      <DefaultDatabase>master</DefaultDatabase>
-    </login>
-    <schema id="32" parent="2" name="INFORMATION_SCHEMA">
+    <schema id="40" parent="6" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
     </schema>
-    <schema id="33" parent="2" name="db_accessadmin">
+    <schema id="41" parent="6" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
     </schema>
-    <schema id="34" parent="2" name="db_backupoperator">
+    <schema id="42" parent="6" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
     </schema>
-    <schema id="35" parent="2" name="db_datareader">
+    <schema id="43" parent="6" name="db_datareader">
       <ObjectId>16390</ObjectId>
     </schema>
-    <schema id="36" parent="2" name="db_datawriter">
+    <schema id="44" parent="6" name="db_datawriter">
       <ObjectId>16391</ObjectId>
     </schema>
-    <schema id="37" parent="2" name="db_ddladmin">
+    <schema id="45" parent="6" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
     </schema>
-    <schema id="38" parent="2" name="db_denydatareader">
+    <schema id="46" parent="6" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
     </schema>
-    <schema id="39" parent="2" name="db_denydatawriter">
+    <schema id="47" parent="6" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
     </schema>
-    <schema id="40" parent="2" name="db_owner">
+    <schema id="48" parent="6" name="db_owner">
       <ObjectId>16384</ObjectId>
     </schema>
-    <schema id="41" parent="2" name="db_securityadmin">
+    <schema id="49" parent="6" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
     </schema>
-    <schema id="42" parent="2" name="dbo">
+    <schema id="50" parent="6" name="dbo">
       <ObjectId>1</ObjectId>
-      <PermissionsCheckSum>16112104641</PermissionsCheckSum>
-      <Grants>1333579789|||0|execute|G
-1333579789|||2|execute|D
-1349579846|||0|execute|G
+      <PermissionsCheckSum>16227592001</PermissionsCheckSum>
+      <Grants>1349579846|||0|execute|G
 1349579846|||2|execute|D
 1365579903|||0|execute|G
 1365579903|||2|execute|D
@@ -248,1089 +278,1092 @@
 1413580074|||2|execute|D
 1429580131|||0|execute|G
 1429580131|||2|execute|D
+1445580188|||0|execute|G
+1445580188|||2|execute|D
 </Grants>
-      <IntrospectionTimestamp>2021-03-27.15:45:13.927</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2021-04-03.02:59:05.180</IntrospectionTimestamp>
       <Current>1</Current>
-      <DescriptionsCheckSum>13489306982</DescriptionsCheckSum>
+      <DescriptionsCheckSum>12494544441</DescriptionsCheckSum>
     </schema>
-    <schema id="43" parent="2" name="guest">
+    <schema id="51" parent="6" name="guest">
       <ObjectId>2</ObjectId>
     </schema>
-    <schema id="44" parent="2" name="sys">
+    <schema id="52" parent="6" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <role id="45" parent="2" name="public">
+    <role id="53" parent="6" name="public">
       <ObjectId>0</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="46" parent="2" name="dbo">
+    <role id="54" parent="6" name="dbo">
       <ObjectId>1</ObjectId>
+      <Type>windows-user</Type>
       <DefaultSchema>dbo</DefaultSchema>
-      <AuthType>instance</AuthType>
+      <AuthType>windows</AuthType>
     </role>
-    <role id="47" parent="2" name="guest">
+    <role id="55" parent="6" name="guest">
       <ObjectId>2</ObjectId>
       <DefaultSchema>guest</DefaultSchema>
       <AuthType>none</AuthType>
     </role>
-    <role id="48" parent="2" name="INFORMATION_SCHEMA">
+    <role id="56" parent="6" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
       <AuthType>none</AuthType>
     </role>
-    <role id="49" parent="2" name="sys">
+    <role id="57" parent="6" name="sys">
       <ObjectId>4</ObjectId>
       <AuthType>none</AuthType>
     </role>
-    <role id="50" parent="2" name="db_owner">
+    <role id="58" parent="6" name="db_owner">
       <ObjectId>16384</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="51" parent="2" name="db_accessadmin">
+    <role id="59" parent="6" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="52" parent="2" name="db_securityadmin">
+    <role id="60" parent="6" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="53" parent="2" name="db_ddladmin">
+    <role id="61" parent="6" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="54" parent="2" name="db_backupoperator">
+    <role id="62" parent="6" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="55" parent="2" name="db_datareader">
+    <role id="63" parent="6" name="db_datareader">
       <ObjectId>16390</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="56" parent="2" name="db_datawriter">
+    <role id="64" parent="6" name="db_datawriter">
       <ObjectId>16391</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="57" parent="2" name="db_denydatareader">
+    <role id="65" parent="6" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <role id="58" parent="2" name="db_denydatawriter">
+    <role id="66" parent="6" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
       <OwnerId>1</OwnerId>
       <Type>database-role</Type>
       <AuthType>none</AuthType>
     </role>
-    <table id="59" parent="42" name="Admin">
-      <ObjectId>981578535</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.943</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.607</ModifiedTimestamp>
+    <table id="67" parent="50" name="Admin">
+      <ObjectId>997578592</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:58.130</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.247</ModifiedTimestamp>
     </table>
-    <table id="60" parent="42" name="Baithi">
-      <ObjectId>757577737</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.900</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.233</ModifiedTimestamp>
+    <table id="68" parent="50" name="Baithi">
+      <ObjectId>773577794</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:17.490</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.240</ModifiedTimestamp>
     </table>
-    <table id="61" parent="42" name="Bode">
-      <ObjectId>597577167</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.860</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.233</ModifiedTimestamp>
+    <table id="69" parent="50" name="Bode">
+      <ObjectId>613577224</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:42.197</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.240</ModifiedTimestamp>
     </table>
-    <table id="62" parent="42" name="Cauhoi">
-      <ObjectId>565577053</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.850</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.053</ModifiedTimestamp>
+    <table id="70" parent="50" name="Cauhoi">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:38.217</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:03.530</ModifiedTimestamp>
     </table>
-    <table id="63" parent="42" name="Giaovien">
-      <ObjectId>949578421</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.933</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.677</ModifiedTimestamp>
+    <table id="71" parent="50" name="Giaovien">
+      <ObjectId>965578478</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:51.483</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.247</ModifiedTimestamp>
     </table>
-    <table id="64" parent="42" name="Hocsinh">
-      <ObjectId>853578079</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.920</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.750</ModifiedTimestamp>
+    <table id="72" parent="50" name="Hocsinh">
+      <ObjectId>869578136</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:31.680</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.247</ModifiedTimestamp>
     </table>
-    <table id="65" parent="42" name="Ketqua">
-      <ObjectId>725577623</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.897</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.237</ModifiedTimestamp>
+    <table id="73" parent="50" name="Ketqua">
+      <ObjectId>741577680</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:09.837</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.243</ModifiedTimestamp>
     </table>
-    <table id="66" parent="42" name="Khoi">
-      <ObjectId>789577851</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.910</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.230</ModifiedTimestamp>
+    <table id="74" parent="50" name="Khoi">
+      <ObjectId>805577908</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:22.213</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.237</ModifiedTimestamp>
     </table>
-    <table id="67" parent="42" name="Kythi">
-      <ObjectId>693577509</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.887</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.233</ModifiedTimestamp>
+    <table id="75" parent="50" name="Kythi">
+      <ObjectId>709577566</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:02.367</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.243</ModifiedTimestamp>
     </table>
-    <table id="68" parent="42" name="Lop">
-      <ObjectId>821577965</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.917</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.233</ModifiedTimestamp>
+    <table id="76" parent="50" name="Lop">
+      <ObjectId>837578022</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:26.280</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.240</ModifiedTimestamp>
     </table>
-    <table id="69" parent="42" name="Made">
-      <ObjectId>629577281</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.877</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.217</ModifiedTimestamp>
+    <table id="77" parent="50" name="Made">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:52.500</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.227</ModifiedTimestamp>
     </table>
-    <table id="70" parent="42" name="Monhoc">
-      <ObjectId>661577395</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.883</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.223</ModifiedTimestamp>
+    <table id="78" parent="50" name="Monhoc">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:57.453</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.233</ModifiedTimestamp>
     </table>
-    <table id="71" parent="42" name="Quyen">
-      <ObjectId>1525580473</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.103</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.510</ModifiedTimestamp>
+    <table id="79" parent="50" name="Quyen">
+      <ObjectId>933578364</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:44.860</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.243</ModifiedTimestamp>
     </table>
-    <table id="72" parent="42" name="Taikhoan">
-      <ObjectId>1557580587</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.490</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.747</ModifiedTimestamp>
+    <table id="80" parent="50" name="Taikhoan">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:38.350</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.253</ModifiedTimestamp>
     </table>
-    <table id="73" parent="42" name="sysdiagrams">
-      <ObjectId>1285579618</ObjectId>
+    <table id="81" parent="50" name="sysdiagrams">
+      <ObjectId>1301579675</ObjectId>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.773</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.773</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:47.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:47.993</ModifiedTimestamp>
     </table>
-    <routine id="74" parent="42" name="fn_diagramobjects">
-      <ObjectId>1429580131</ObjectId>
+    <routine id="82" parent="50" name="fn_diagramobjects">
+      <ObjectId>1445580188</ObjectId>
       <SourceTextLength>1647</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.783</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.783</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:48.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:48.007</ModifiedTimestamp>
       <RoutineType>scalar-fun</RoutineType>
     </routine>
-    <routine id="75" parent="42" name="sp_alterdiagram">
-      <ObjectId>1397580017</ObjectId>
+    <routine id="83" parent="50" name="sp_alterdiagram">
+      <ObjectId>1413580074</ObjectId>
       <SourceTextLength>1501</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.780</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.780</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:48.003</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:48.003</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="76" parent="42" name="sp_creatediagram">
-      <ObjectId>1365579903</ObjectId>
+    <routine id="84" parent="50" name="sp_creatediagram">
+      <ObjectId>1381579960</ObjectId>
       <SourceTextLength>1223</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.777</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.777</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:48</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:48</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="77" parent="42" name="sp_dropdiagram">
-      <ObjectId>1413580074</ObjectId>
+    <routine id="85" parent="50" name="sp_dropdiagram">
+      <ObjectId>1429580131</ObjectId>
       <SourceTextLength>896</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.783</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.783</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:48.007</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:48.007</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="78" parent="42" name="sp_helpdiagramdefinition">
-      <ObjectId>1349579846</ObjectId>
+    <routine id="86" parent="50" name="sp_helpdiagramdefinition">
+      <ObjectId>1365579903</ObjectId>
       <SourceTextLength>921</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.777</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.777</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:47.997</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:47.997</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="79" parent="42" name="sp_helpdiagrams">
-      <ObjectId>1333579789</ObjectId>
+    <routine id="87" parent="50" name="sp_helpdiagrams">
+      <ObjectId>1349579846</ObjectId>
       <SourceTextLength>658</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.773</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.773</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:47.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:47.993</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="80" parent="42" name="sp_renamediagram">
-      <ObjectId>1381579960</ObjectId>
+    <routine id="88" parent="50" name="sp_renamediagram">
+      <ObjectId>1397580017</ObjectId>
       <SourceTextLength>1721</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.780</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.780</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:48</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:48</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="81" parent="42" name="sp_upgraddiagrams">
-      <ObjectId>1269579561</ObjectId>
+    <routine id="89" parent="50" name="sp_upgraddiagrams">
+      <ObjectId>1285579618</ObjectId>
       <SourceTextLength>1463</SourceTextLength>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <CreatedTimestamp>2021-03-26.03:20:47.770</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.770</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:47.990</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:47.990</ModifiedTimestamp>
       <RoutineType>proc</RoutineType>
     </routine>
-    <column id="82" parent="59" name="ma_Ad">
+    <column id="90" parent="67" name="ma_Ad">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="83" parent="59" name="ten_Ad">
+    <column id="91" parent="67" name="ten_Ad">
       <Position>2</Position>
       <DataType>nvarchar(50 char)|0s</DataType>
     </column>
-    <column id="84" parent="59" name="ngaysinh">
+    <column id="92" parent="67" name="ngaysinh">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="85" parent="59" name="img_Ad">
+    <column id="93" parent="67" name="img_Ad">
       <Position>4</Position>
       <DataType>varchar(200 char)|0s</DataType>
     </column>
-    <column id="86" parent="59" name="username">
+    <column id="94" parent="67" name="username">
       <Position>5</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="87" parent="59" name="PK_Admin">
+    <index id="95" parent="67" name="PK_Admin">
       <Position>1</Position>
       <ColNames>ma_Ad</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="88" parent="59" name="IX_Relationship9">
+    <index id="96" parent="67" name="IX_Relationship9">
       <Position>2</Position>
       <ColNames>username</ColNames>
     </index>
-    <key id="89" parent="59" name="PK_Admin">
-      <ObjectId>997578592</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.947</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.947</ModifiedTimestamp>
+    <key id="97" parent="67" name="PK_Admin">
+      <ObjectId>1013578649</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:01.700</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:01.700</ModifiedTimestamp>
       <ColNames>ma_Ad</ColNames>
       <UnderlyingIndexName>PK_Admin</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="90" parent="59" name="Ad_TK">
-      <ObjectId>1605580758</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.603</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.603</ModifiedTimestamp>
+    <foreign-key id="98" parent="67" name="Ad_TK">
+      <ObjectId>1269579561</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.247</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.247</ModifiedTimestamp>
       <ColNames>username</ColNames>
-      <RefTableId>1557580587</RefTableId>
+      <RefTableId>901578250</RefTableId>
       <RefTableName>Taikhoan</RefTableName>
       <RefKeyName>PK_Taikhoan</RefKeyName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="91" parent="60" name="ma_Baithi">
+    <column id="99" parent="68" name="ma_Baithi">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="92" parent="60" name="ma_CH">
+    <column id="100" parent="68" name="ma_CH">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="93" parent="60" name="DA">
+    <column id="101" parent="68" name="DA">
       <Position>3</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="94" parent="60" name="ma_KQ">
+    <column id="102" parent="68" name="ma_KQ">
       <Position>4</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="95" parent="60" name="PK_Baithi">
+    <index id="103" parent="68" name="PK_Baithi">
       <Position>1</Position>
       <ColNames>ma_Baithi
 ma_KQ</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="96" parent="60" name="PK_Baithi">
-      <ObjectId>773577794</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.907</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.907</ModifiedTimestamp>
+    <key id="104" parent="68" name="PK_Baithi">
+      <ObjectId>789577851</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:19.150</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:19.150</ModifiedTimestamp>
       <ColNames>ma_Baithi
 ma_KQ</ColNames>
       <UnderlyingIndexName>PK_Baithi</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="97" parent="60" name="KQ_TL">
-      <ObjectId>1157579162</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.233</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.233</ModifiedTimestamp>
+    <foreign-key id="105" parent="68" name="KQ_TL">
+      <ObjectId>1173579219</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.240</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.240</ModifiedTimestamp>
       <ColNames>ma_KQ</ColNames>
-      <RefTableId>725577623</RefTableId>
+      <RefTableId>741577680</RefTableId>
       <RefTableName>Ketqua</RefTableName>
       <RefKeyName>PK_Ketqua</RefKeyName>
       <RefColNames>ma_KQ</RefColNames>
     </foreign-key>
-    <column id="98" parent="61" name="ma_Bode">
+    <column id="106" parent="69" name="ma_Bode">
       <Position>1</Position>
       <DataType>char(7 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="99" parent="61" name="ten_Bode">
+    <column id="107" parent="69" name="ten_Bode">
       <Position>2</Position>
       <DataType>varchar(40 char)|0s</DataType>
     </column>
-    <column id="100" parent="61" name="ma_CH">
+    <column id="108" parent="69" name="ma_CH">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="101" parent="61" name="ma_MH">
+    <column id="109" parent="69" name="ma_MH">
       <Position>4</Position>
       <DataType>varchar(10 char)|0s</DataType>
     </column>
-    <column id="102" parent="61" name="ma_KT">
+    <column id="110" parent="69" name="ma_KT">
       <Position>5</Position>
       <DataType>char(10 char)|0s</DataType>
     </column>
-    <index id="103" parent="61" name="PK_Bode">
+    <index id="111" parent="69" name="PK_Bode">
       <Position>1</Position>
       <ColNames>ma_Bode</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="104" parent="61" name="IX_Relationship1">
+    <index id="112" parent="69" name="IX_Relationship1">
       <Position>2</Position>
       <ColNames>ma_CH</ColNames>
     </index>
-    <index id="105" parent="61" name="IX_Relationship4">
+    <index id="113" parent="69" name="IX_Relationship4">
       <Position>3</Position>
       <ColNames>ma_MH</ColNames>
     </index>
-    <index id="106" parent="61" name="IX_Relationship26">
+    <index id="114" parent="69" name="IX_Relationship26">
       <Position>4</Position>
       <ColNames>ma_KT</ColNames>
     </index>
-    <key id="107" parent="61" name="PK_Bode">
-      <ObjectId>613577224</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.873</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.873</ModifiedTimestamp>
+    <key id="115" parent="69" name="PK_Bode">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:49.877</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:46:49.877</ModifiedTimestamp>
       <ColNames>ma_Bode</ColNames>
       <UnderlyingIndexName>PK_Bode</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="108" parent="61" name="Bode_CH">
-      <ObjectId>1013578649</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.053</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.053</ModifiedTimestamp>
+    <foreign-key id="116" parent="69" name="Bode_CH">
+      <ObjectId>1029578706</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:03.527</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:03.527</ModifiedTimestamp>
       <ColNames>ma_CH</ColNames>
-      <RefTableId>565577053</RefTableId>
+      <RefTableId>581577110</RefTableId>
       <RefTableName>Cauhoi</RefTableName>
       <RefKeyName>PK_Cauhoi</RefKeyName>
       <RefColNames>ma_CH</RefColNames>
     </foreign-key>
-    <foreign-key id="109" parent="61" name="NH_Bode">
-      <ObjectId>1045578763</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.220</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.220</ModifiedTimestamp>
+    <foreign-key id="117" parent="69" name="NH_Bode">
+      <ObjectId>1061578820</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.230</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.230</ModifiedTimestamp>
       <ColNames>ma_MH</ColNames>
-      <RefTableId>661577395</RefTableId>
+      <RefTableId>677577452</RefTableId>
       <RefTableName>Monhoc</RefTableName>
       <RefKeyName>PK_Monhoc</RefKeyName>
       <RefColNames>ma_MH</RefColNames>
     </foreign-key>
-    <foreign-key id="110" parent="61" name="Bode_KT">
-      <ObjectId>1173579219</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.233</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.233</ModifiedTimestamp>
+    <foreign-key id="118" parent="69" name="Bode_KT">
+      <ObjectId>1189579276</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.240</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.240</ModifiedTimestamp>
       <ColNames>ma_KT</ColNames>
-      <RefTableId>693577509</RefTableId>
+      <RefTableId>709577566</RefTableId>
       <RefTableName>Kythi</RefTableName>
       <RefKeyName>PK_Kythi</RefKeyName>
       <RefColNames>ma_KT</RefColNames>
     </foreign-key>
-    <column id="111" parent="62" name="ma_CH">
+    <column id="119" parent="70" name="ma_CH">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="112" parent="62" name="loai">
+    <column id="120" parent="70" name="loai">
       <Position>2</Position>
       <DataType>bit|0s</DataType>
     </column>
-    <column id="113" parent="62" name="nd_CH">
+    <column id="121" parent="70" name="nd_CH">
       <Position>3</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="114" parent="62" name="img_CH">
+    <column id="122" parent="70" name="img_CH">
       <Position>4</Position>
       <DataType>varchar(200 char)|0s</DataType>
     </column>
-    <column id="115" parent="62" name="aud_CH">
+    <column id="123" parent="70" name="aud_CH">
       <Position>5</Position>
       <DataType>varchar(200 char)|0s</DataType>
     </column>
-    <column id="116" parent="62" name="TL_1">
+    <column id="124" parent="70" name="TL_1">
       <Position>6</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="117" parent="62" name="TL_2">
+    <column id="125" parent="70" name="TL_2">
       <Position>7</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="118" parent="62" name="TL_3">
+    <column id="126" parent="70" name="TL_3">
       <Position>8</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="119" parent="62" name="TL_4">
+    <column id="127" parent="70" name="TL_4">
       <Position>9</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="120" parent="62" name="DA">
+    <column id="128" parent="70" name="DA">
       <Position>10</Position>
       <DataType>nvarchar(200 char)|0s</DataType>
     </column>
-    <column id="121" parent="62" name="dokho">
+    <column id="129" parent="70" name="dokho">
       <Position>11</Position>
       <DataType>int|0s</DataType>
     </column>
-    <index id="122" parent="62" name="PK_Cauhoi">
+    <index id="130" parent="70" name="PK_Cauhoi">
       <Position>1</Position>
       <ColNames>ma_CH</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="123" parent="62" name="PK_Cauhoi">
-      <ObjectId>581577110</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.857</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.857</ModifiedTimestamp>
+    <key id="131" parent="70" name="PK_Cauhoi">
+      <ObjectId>597577167</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:39.930</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:46:39.930</ModifiedTimestamp>
       <ColNames>ma_CH</ColNames>
       <UnderlyingIndexName>PK_Cauhoi</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="124" parent="63" name="ma_GV">
+    <column id="132" parent="71" name="ma_GV">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="125" parent="63" name="ten_GV">
+    <column id="133" parent="71" name="ten_GV">
       <Position>2</Position>
       <DataType>nvarchar(50 char)|0s</DataType>
     </column>
-    <column id="126" parent="63" name="ngaysinh">
+    <column id="134" parent="71" name="ngaysinh">
       <Position>3</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="127" parent="63" name="img_GV">
+    <column id="135" parent="71" name="img_GV">
       <Position>4</Position>
       <DataType>varchar(200 char)|0s</DataType>
     </column>
-    <column id="128" parent="63" name="username">
+    <column id="136" parent="71" name="username">
       <Position>5</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="129" parent="63" name="PK_Giaovien">
+    <index id="137" parent="71" name="PK_Giaovien">
       <Position>1</Position>
       <ColNames>ma_GV</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="130" parent="63" name="IX_Relationship8">
+    <index id="138" parent="71" name="IX_Relationship8">
       <Position>2</Position>
       <ColNames>username</ColNames>
     </index>
-    <key id="131" parent="63" name="PK_Giaovien">
-      <ObjectId>965578478</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.940</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.940</ModifiedTimestamp>
+    <key id="139" parent="71" name="PK_Giaovien">
+      <ObjectId>981578535</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:55.753</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:55.753</ModifiedTimestamp>
       <ColNames>ma_GV</ColNames>
       <UnderlyingIndexName>PK_Giaovien</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="132" parent="63" name="GV_TK">
-      <ObjectId>1621580815</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.673</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.673</ModifiedTimestamp>
+    <foreign-key id="140" parent="71" name="GV_TK">
+      <ObjectId>1253579504</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.247</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.247</ModifiedTimestamp>
       <ColNames>username</ColNames>
-      <RefTableId>1557580587</RefTableId>
+      <RefTableId>901578250</RefTableId>
       <RefTableName>Taikhoan</RefTableName>
       <RefKeyName>PK_Taikhoan</RefKeyName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="133" parent="64" name="ma_HS">
+    <column id="141" parent="72" name="ma_HS">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="134" parent="64" name="ten_HS">
+    <column id="142" parent="72" name="ten_HS">
       <Position>2</Position>
       <DataType>nvarchar(50 char)|0s</DataType>
     </column>
-    <column id="135" parent="64" name="ngaysinh">
+    <column id="143" parent="72" name="ngaysinh">
       <Position>3</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="136" parent="64" name="img_HS">
+    <column id="144" parent="72" name="img_HS">
       <Position>4</Position>
       <DataType>image|0s</DataType>
     </column>
-    <column id="137" parent="64" name="ma_Lop">
+    <column id="145" parent="72" name="ma_Lop">
       <Position>5</Position>
       <DataType>varchar(10 char)|0s</DataType>
     </column>
-    <column id="138" parent="64" name="username">
+    <column id="146" parent="72" name="username">
       <Position>6</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="139" parent="64" name="PK_Hocsinh">
+    <index id="147" parent="72" name="PK_Hocsinh">
       <Position>1</Position>
       <ColNames>ma_HS</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="140" parent="64" name="IX_Relationship10">
+    <index id="148" parent="72" name="IX_Relationship10">
       <Position>2</Position>
       <ColNames>ma_Lop</ColNames>
     </index>
-    <index id="141" parent="64" name="IX_Relationship7">
+    <index id="149" parent="72" name="IX_Relationship7">
       <Position>3</Position>
       <ColNames>username</ColNames>
     </index>
-    <key id="142" parent="64" name="PK_Hocsinh">
-      <ObjectId>869578136</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.927</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.927</ModifiedTimestamp>
+    <key id="150" parent="72" name="PK_Hocsinh">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:35.970</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:35.970</ModifiedTimestamp>
       <ColNames>ma_HS</ColNames>
       <UnderlyingIndexName>PK_Hocsinh</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="143" parent="64" name="HS_Lop">
-      <ObjectId>1141579105</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.230</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.230</ModifiedTimestamp>
+    <foreign-key id="151" parent="72" name="HS_Lop">
+      <ObjectId>1157579162</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.240</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.240</ModifiedTimestamp>
       <ColNames>ma_Lop</ColNames>
-      <RefTableId>821577965</RefTableId>
+      <RefTableId>837578022</RefTableId>
       <RefTableName>Lop</RefTableName>
       <RefKeyName>PK_Lop</RefKeyName>
       <RefColNames>ma_Lop</RefColNames>
     </foreign-key>
-    <foreign-key id="144" parent="64" name="HS_TK">
-      <ObjectId>1637580872</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.747</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.747</ModifiedTimestamp>
+    <foreign-key id="152" parent="72" name="HS_TK">
+      <ObjectId>1237579447</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.243</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.243</ModifiedTimestamp>
       <ColNames>username</ColNames>
-      <RefTableId>1557580587</RefTableId>
+      <RefTableId>901578250</RefTableId>
       <RefTableName>Taikhoan</RefTableName>
       <RefKeyName>PK_Taikhoan</RefKeyName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="145" parent="65" name="ma_KQ">
+    <column id="153" parent="73" name="ma_KQ">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="146" parent="65" name="ngaythi">
+    <column id="154" parent="73" name="ngaythi">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="147" parent="65" name="diem">
+    <column id="155" parent="73" name="diem">
       <Position>3</Position>
       <DataType>float|0s</DataType>
     </column>
-    <column id="148" parent="65" name="xeploai">
+    <column id="156" parent="73" name="xeploai">
       <Position>4</Position>
       <DataType>bit|0s</DataType>
     </column>
-    <column id="149" parent="65" name="ma_KT">
+    <column id="157" parent="73" name="ma_KT">
       <Position>5</Position>
       <DataType>char(10 char)|0s</DataType>
     </column>
-    <column id="150" parent="65" name="ma_HS">
+    <column id="158" parent="73" name="ma_HS">
       <Position>6</Position>
       <DataType>char(10 char)|0s</DataType>
     </column>
-    <index id="151" parent="65" name="PK_Ketqua">
+    <index id="159" parent="73" name="PK_Ketqua">
       <Position>1</Position>
       <ColNames>ma_KQ</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="152" parent="65" name="IX_Relationship7">
+    <index id="160" parent="73" name="IX_Relationship7">
       <Position>2</Position>
       <ColNames>ma_KT</ColNames>
     </index>
-    <index id="153" parent="65" name="IX_Relationship27">
+    <index id="161" parent="73" name="IX_Relationship27">
       <Position>3</Position>
       <ColNames>ma_HS</ColNames>
     </index>
-    <key id="154" parent="65" name="PK_Ketqua">
-      <ObjectId>741577680</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.900</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.900</ModifiedTimestamp>
+    <key id="162" parent="73" name="PK_Ketqua">
+      <ObjectId>757577737</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:14.137</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:14.137</ModifiedTimestamp>
       <ColNames>ma_KQ</ColNames>
       <UnderlyingIndexName>PK_Ketqua</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="155" parent="65" name="KQ_KT">
-      <ObjectId>1093578934</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.227</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.227</ModifiedTimestamp>
+    <foreign-key id="163" parent="73" name="KQ_KT">
+      <ObjectId>1109578991</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.233</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.233</ModifiedTimestamp>
       <ColNames>ma_KT</ColNames>
-      <RefTableId>693577509</RefTableId>
+      <RefTableId>709577566</RefTableId>
       <RefTableName>Kythi</RefTableName>
       <RefKeyName>PK_Kythi</RefKeyName>
       <RefColNames>ma_KT</RefColNames>
     </foreign-key>
-    <foreign-key id="156" parent="65" name="KQ_HS">
-      <ObjectId>1189579276</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.237</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.237</ModifiedTimestamp>
+    <foreign-key id="164" parent="73" name="KQ_HS">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.243</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.243</ModifiedTimestamp>
       <ColNames>ma_HS</ColNames>
-      <RefTableId>853578079</RefTableId>
+      <RefTableId>869578136</RefTableId>
       <RefTableName>Hocsinh</RefTableName>
       <RefKeyName>PK_Hocsinh</RefKeyName>
       <RefColNames>ma_HS</RefColNames>
     </foreign-key>
-    <column id="157" parent="66" name="ma_Khoi">
+    <column id="165" parent="74" name="ma_Khoi">
       <Position>1</Position>
       <DataType>varchar(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="158" parent="66" name="ten_Khoi">
+    <column id="166" parent="74" name="ten_Khoi">
       <Position>2</Position>
       <DataType>varchar(5 char)|0s</DataType>
     </column>
-    <index id="159" parent="66" name="PK_Khoi">
+    <index id="167" parent="74" name="PK_Khoi">
       <Position>1</Position>
       <ColNames>ma_Khoi</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="160" parent="66" name="PK_Khoi">
-      <ObjectId>805577908</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.913</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.913</ModifiedTimestamp>
+    <key id="168" parent="74" name="PK_Khoi">
+      <ObjectId>821577965</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:23.760</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:23.760</ModifiedTimestamp>
       <ColNames>ma_Khoi</ColNames>
       <UnderlyingIndexName>PK_Khoi</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="161" parent="67" name="ma_KT">
+    <column id="169" parent="75" name="ma_KT">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="162" parent="67" name="ten_KT">
+    <column id="170" parent="75" name="ten_KT">
       <Position>2</Position>
       <DataType>nvarchar(50 char)|0s</DataType>
     </column>
-    <column id="163" parent="67" name="ngaythi">
+    <column id="171" parent="75" name="ngaythi">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="164" parent="67" name="tg_Lambai">
+    <column id="172" parent="75" name="tg_Lambai">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="165" parent="67" name="tg_Batdau">
+    <column id="173" parent="75" name="tg_Batdau">
       <Position>5</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="166" parent="67" name="tg_Ketthuc">
+    <column id="174" parent="75" name="tg_Ketthuc">
       <Position>6</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="167" parent="67" name="sl_CH">
+    <column id="175" parent="75" name="sl_CH">
       <Position>7</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="168" parent="67" name="ma_MH">
+    <column id="176" parent="75" name="ma_MH">
       <Position>8</Position>
       <DataType>varchar(10 char)|0s</DataType>
     </column>
-    <column id="169" parent="67" name="ma_GV">
+    <column id="177" parent="75" name="ma_GV">
       <Position>9</Position>
       <DataType>char(10 char)|0s</DataType>
     </column>
-    <column id="170" parent="67" name="ma_HS">
+    <column id="178" parent="75" name="ma_HS">
       <Position>10</Position>
       <DataType>char(10 char)|0s</DataType>
     </column>
-    <index id="171" parent="67" name="PK_Kythi">
+    <index id="179" parent="75" name="PK_Kythi">
       <Position>1</Position>
       <ColNames>ma_KT</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="172" parent="67" name="IX_Relationship5">
+    <index id="180" parent="75" name="IX_Relationship5">
       <Position>2</Position>
       <ColNames>ma_MH</ColNames>
     </index>
-    <index id="173" parent="67" name="IX_Relationship6">
+    <index id="181" parent="75" name="IX_Relationship6">
       <Position>3</Position>
       <ColNames>ma_GV</ColNames>
     </index>
-    <index id="174" parent="67" name="IX_Relationship8">
+    <index id="182" parent="75" name="IX_Relationship8">
       <Position>4</Position>
       <ColNames>ma_HS</ColNames>
     </index>
-    <key id="175" parent="67" name="PK_Kythi">
-      <ObjectId>709577566</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.890</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.890</ModifiedTimestamp>
+    <key id="183" parent="75" name="PK_Kythi">
+      <ObjectId>725577623</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:06.750</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:06.750</ModifiedTimestamp>
       <ColNames>ma_KT</ColNames>
       <UnderlyingIndexName>PK_Kythi</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="176" parent="67" name="MH_KT">
-      <ObjectId>1061578820</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.220</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.220</ModifiedTimestamp>
+    <foreign-key id="184" parent="75" name="MH_KT">
+      <ObjectId>1077578877</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.230</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.230</ModifiedTimestamp>
       <ColNames>ma_MH</ColNames>
-      <RefTableId>661577395</RefTableId>
+      <RefTableId>677577452</RefTableId>
       <RefTableName>Monhoc</RefTableName>
       <RefKeyName>PK_Monhoc</RefKeyName>
       <RefColNames>ma_MH</RefColNames>
     </foreign-key>
-    <foreign-key id="177" parent="67" name="GV_KT">
-      <ObjectId>1077578877</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.223</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.223</ModifiedTimestamp>
+    <foreign-key id="185" parent="75" name="GV_KT">
+      <ObjectId>1093578934</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.233</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.233</ModifiedTimestamp>
       <ColNames>ma_GV</ColNames>
-      <RefTableId>949578421</RefTableId>
+      <RefTableId>965578478</RefTableId>
       <RefTableName>Giaovien</RefTableName>
       <RefKeyName>PK_Giaovien</RefKeyName>
       <RefColNames>ma_GV</RefColNames>
     </foreign-key>
-    <foreign-key id="178" parent="67" name="KT_HS">
-      <ObjectId>1109578991</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.227</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.227</ModifiedTimestamp>
+    <foreign-key id="186" parent="75" name="KT_HS">
+      <ObjectId>1125579048</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.237</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.237</ModifiedTimestamp>
       <ColNames>ma_HS</ColNames>
-      <RefTableId>853578079</RefTableId>
+      <RefTableId>869578136</RefTableId>
       <RefTableName>Hocsinh</RefTableName>
       <RefKeyName>PK_Hocsinh</RefKeyName>
       <RefColNames>ma_HS</RefColNames>
     </foreign-key>
-    <column id="179" parent="68" name="ma_Lop">
+    <column id="187" parent="76" name="ma_Lop">
       <Position>1</Position>
       <DataType>varchar(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="180" parent="68" name="ten_Lop">
+    <column id="188" parent="76" name="ten_Lop">
       <Position>2</Position>
       <DataType>varchar(5 char)|0s</DataType>
     </column>
-    <column id="181" parent="68" name="ma_Khoi">
+    <column id="189" parent="76" name="ma_Khoi">
       <Position>3</Position>
       <DataType>varchar(10 char)|0s</DataType>
     </column>
-    <index id="182" parent="68" name="PK_Lop">
+    <index id="190" parent="76" name="PK_Lop">
       <Position>1</Position>
       <ColNames>ma_Lop</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="183" parent="68" name="IX_Relationship9">
+    <index id="191" parent="76" name="IX_Relationship9">
       <Position>2</Position>
       <ColNames>ma_Khoi</ColNames>
     </index>
-    <key id="184" parent="68" name="PK_Lop">
-      <ObjectId>837578022</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.920</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.920</ModifiedTimestamp>
+    <key id="192" parent="76" name="PK_Lop">
+      <ObjectId>853578079</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:29.457</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:29.457</ModifiedTimestamp>
       <ColNames>ma_Lop</ColNames>
       <UnderlyingIndexName>PK_Lop</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="185" parent="68" name="Khoi_Lop">
-      <ObjectId>1125579048</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.230</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.230</ModifiedTimestamp>
+    <foreign-key id="193" parent="76" name="Khoi_Lop">
+      <ObjectId>1141579105</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.237</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.237</ModifiedTimestamp>
       <ColNames>ma_Khoi</ColNames>
-      <RefTableId>789577851</RefTableId>
+      <RefTableId>805577908</RefTableId>
       <RefTableName>Khoi</RefTableName>
       <RefKeyName>PK_Khoi</RefKeyName>
       <RefColNames>ma_Khoi</RefColNames>
     </foreign-key>
-    <column id="186" parent="69" name="ma_De">
+    <column id="194" parent="77" name="ma_De">
       <Position>1</Position>
       <DataType>char(3 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="187" parent="69" name="ten_Made">
+    <column id="195" parent="77" name="ten_Made">
       <Position>2</Position>
       <DataType>char(3 char)|0s</DataType>
     </column>
-    <column id="188" parent="69" name="ma_CHde">
+    <column id="196" parent="77" name="ma_CHde">
       <Position>3</Position>
       <DataType>varchar(300 char)|0s</DataType>
     </column>
-    <column id="189" parent="69" name="ma_Bode">
+    <column id="197" parent="77" name="ma_Bode">
       <Position>4</Position>
       <DataType>char(7 char)|0s</DataType>
     </column>
-    <index id="190" parent="69" name="PK_Made">
+    <index id="198" parent="77" name="PK_Made">
       <Position>1</Position>
       <ColNames>ma_De</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="191" parent="69" name="IX_Relationship3">
+    <index id="199" parent="77" name="IX_Relationship3">
       <Position>2</Position>
       <ColNames>ma_Bode</ColNames>
     </index>
-    <key id="192" parent="69" name="PK_Made">
-      <ObjectId>645577338</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.880</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.880</ModifiedTimestamp>
+    <key id="200" parent="77" name="PK_Made">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:56</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:46:56</ModifiedTimestamp>
       <ColNames>ma_De</ColNames>
       <UnderlyingIndexName>PK_Made</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="193" parent="69" name="MH_Made">
-      <ObjectId>1029578706</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:09.217</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:09.217</ModifiedTimestamp>
+    <foreign-key id="201" parent="77" name="MH_Made">
+      <ObjectId>1045578763</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.230</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.230</ModifiedTimestamp>
       <ColNames>ma_Bode</ColNames>
-      <RefTableId>597577167</RefTableId>
+      <RefTableId>613577224</RefTableId>
       <RefTableName>Bode</RefTableName>
       <RefKeyName>PK_Bode</RefKeyName>
       <RefColNames>ma_Bode</RefColNames>
     </foreign-key>
-    <column id="194" parent="70" name="ma_MH">
+    <column id="202" parent="78" name="ma_MH">
       <Position>1</Position>
       <DataType>varchar(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="195" parent="70" name="ten_MH">
+    <column id="203" parent="78" name="ten_MH">
       <Position>2</Position>
       <DataType>nvarchar(40 char)|0s</DataType>
     </column>
-    <index id="196" parent="70" name="PK_Monhoc">
+    <index id="204" parent="78" name="PK_Monhoc">
       <Position>1</Position>
       <ColNames>ma_MH</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="197" parent="70" name="PK_Monhoc">
-      <ObjectId>677577452</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:03.883</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:03.883</ModifiedTimestamp>
+    <key id="205" parent="78" name="PK_Monhoc">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:46:59.427</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:46:59.427</ModifiedTimestamp>
       <ColNames>ma_MH</ColNames>
       <UnderlyingIndexName>PK_Monhoc</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="198" parent="71" name="ma_Quyen">
+    <column id="206" parent="79" name="ma_Quyen">
       <Position>1</Position>
-      <DataType>int|0s</DataType>
+      <DataType>bit|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="199" parent="71" name="ten_Quyen">
+    <column id="207" parent="79" name="ten_Quyen">
       <Position>2</Position>
       <DataType>char(10 char)|0s</DataType>
     </column>
-    <index id="200" parent="71" name="PK_Quyen">
+    <index id="208" parent="79" name="PK_Quyen">
       <Position>1</Position>
       <ColNames>ma_Quyen</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="201" parent="71" name="PK_Quyen">
-      <ObjectId>1541580530</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.267</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.267</ModifiedTimestamp>
+    <key id="209" parent="79" name="PK_Quyen">
+      <ObjectId>949578421</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:48.310</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:48.310</ModifiedTimestamp>
       <ColNames>ma_Quyen</ColNames>
       <UnderlyingIndexName>PK_Quyen</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="202" parent="72" name="username">
+    <column id="210" parent="80" name="username">
       <Position>1</Position>
       <DataType>char(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="203" parent="72" name="passwords">
+    <column id="211" parent="80" name="passwords">
       <Position>2</Position>
       <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="204" parent="72" name="trangthai">
+    <column id="212" parent="80" name="trangthai">
       <Position>3</Position>
       <DataType>bit|0s</DataType>
     </column>
-    <column id="205" parent="72" name="ma_Quyen">
+    <column id="213" parent="80" name="ma_Quyen">
       <Position>4</Position>
-      <DataType>int|0s</DataType>
+      <DataType>bit|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="206" parent="72" name="PK_Taikhoan">
+    <index id="214" parent="80" name="PK_Taikhoan">
       <Position>1</Position>
       <ColNames>username</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="207" parent="72" name="IX_Relationship6">
+    <index id="215" parent="80" name="IX_Relationship6">
       <Position>2</Position>
       <ColNames>ma_Quyen</ColNames>
     </index>
-    <key id="208" parent="72" name="PK_Taikhoan">
-      <ObjectId>1573580644</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.507</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.507</ModifiedTimestamp>
+    <key id="216" parent="80" name="PK_Taikhoan">
+      <ObjectId>917578307</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:47:42.580</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:47:42.580</ModifiedTimestamp>
       <ColNames>username</ColNames>
       <UnderlyingIndexName>PK_Taikhoan</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="209" parent="72" name="TK_ Quyen">
-      <ObjectId>1589580701</ObjectId>
-      <CreatedTimestamp>2021-03-26.04:21:30.507</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.04:21:30.507</ModifiedTimestamp>
+    <foreign-key id="217" parent="80" name="TK_ Quyen">
+      <ObjectId>1221579390</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:20.243</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:20.243</ModifiedTimestamp>
       <ColNames>ma_Quyen</ColNames>
-      <RefTableId>1525580473</RefTableId>
+      <RefTableId>933578364</RefTableId>
       <RefTableName>Quyen</RefTableName>
       <RefKeyName>PK_Quyen</RefKeyName>
       <RefColNames>ma_Quyen</RefColNames>
     </foreign-key>
-    <column id="210" parent="73" name="name">
+    <column id="218" parent="81" name="name">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="211" parent="73" name="principal_id">
+    <column id="219" parent="81" name="principal_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="212" parent="73" name="diagram_id">
+    <column id="220" parent="81" name="diagram_id">
       <Position>3</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="213" parent="73" name="version">
+    <column id="221" parent="81" name="version">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="214" parent="73" name="definition">
+    <column id="222" parent="81" name="definition">
       <Position>5</Position>
       <DataType>varbinary(max)|0s</DataType>
     </column>
-    <index id="215" parent="73" name="PK__sysdiagr__C2B05B614CE21473">
+    <index id="223" parent="81" name="PK__sysdiagr__C2B05B6145B4352D">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>diagram_id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="216" parent="73" name="UK_principal_name">
+    <index id="224" parent="81" name="UK_principal_name">
       <Position>2</Position>
       <ColNames>principal_id
 name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="217" parent="73" name="PK__sysdiagr__C2B05B614CE21473">
-      <ObjectId>1301579675</ObjectId>
+    <key id="225" parent="81" name="PK__sysdiagr__C2B05B6145B4352D">
+      <ObjectId>1317579732</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2021-03-26.03:20:47.773</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.773</ModifiedTimestamp>
+      <CreatedTimestamp>2021-03-26.08:48:47.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:47.993</ModifiedTimestamp>
       <ColNames>diagram_id</ColNames>
-      <UnderlyingIndexName>PK__sysdiagr__C2B05B614CE21473</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B6145B4352D</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="218" parent="73" name="UK_principal_name">
-      <ObjectId>1317579732</ObjectId>
-      <CreatedTimestamp>2021-03-26.03:20:47.773</CreatedTimestamp>
-      <ModifiedTimestamp>2021-03-26.03:20:47.773</ModifiedTimestamp>
+    <key id="226" parent="81" name="UK_principal_name">
+      <ObjectId>1333579789</ObjectId>
+      <CreatedTimestamp>2021-03-26.08:48:47.993</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-26.08:48:47.993</ModifiedTimestamp>
       <ColNames>principal_id
 name</ColNames>
       <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
     </key>
-    <argument id="219" parent="74">
+    <argument id="227" parent="82">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="220" parent="75" name="@diagramname">
+    <argument id="228" parent="83" name="@diagramname">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
     </argument>
-    <argument id="221" parent="75" name="@owner_id">
+    <argument id="229" parent="83" name="@owner_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="222" parent="75" name="@version">
+    <argument id="230" parent="83" name="@version">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="223" parent="75" name="@definition">
+    <argument id="231" parent="83" name="@definition">
       <Position>4</Position>
       <DataType>varbinary(max)|0s</DataType>
     </argument>
-    <argument id="224" parent="76" name="@diagramname">
+    <argument id="232" parent="84" name="@diagramname">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
     </argument>
-    <argument id="225" parent="76" name="@owner_id">
+    <argument id="233" parent="84" name="@owner_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="226" parent="76" name="@version">
+    <argument id="234" parent="84" name="@version">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="227" parent="76" name="@definition">
+    <argument id="235" parent="84" name="@definition">
       <Position>4</Position>
       <DataType>varbinary(max)|0s</DataType>
     </argument>
-    <argument id="228" parent="77" name="@diagramname">
+    <argument id="236" parent="85" name="@diagramname">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
     </argument>
-    <argument id="229" parent="77" name="@owner_id">
+    <argument id="237" parent="85" name="@owner_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="230" parent="78" name="@diagramname">
+    <argument id="238" parent="86" name="@diagramname">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
     </argument>
-    <argument id="231" parent="78" name="@owner_id">
+    <argument id="239" parent="86" name="@owner_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="232" parent="79" name="@diagramname">
+    <argument id="240" parent="87" name="@diagramname">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
     </argument>
-    <argument id="233" parent="79" name="@owner_id">
+    <argument id="241" parent="87" name="@owner_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="234" parent="80" name="@diagramname">
+    <argument id="242" parent="88" name="@diagramname">
       <Position>1</Position>
       <DataType>sysname|0s</DataType>
     </argument>
-    <argument id="235" parent="80" name="@owner_id">
+    <argument id="243" parent="88" name="@owner_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </argument>
-    <argument id="236" parent="80" name="@new_diagramname">
+    <argument id="244" parent="88" name="@new_diagramname">
       <Position>3</Position>
       <DataType>sysname|0s</DataType>
     </argument>
