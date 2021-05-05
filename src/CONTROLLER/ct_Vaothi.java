@@ -4,10 +4,8 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXListView;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
+import javafx.scene.text.Text;
 import jxl.Sheet;
 import jxl.Workbook;
 
@@ -16,6 +14,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class ct_Vaothi implements Initializable {
@@ -73,6 +72,9 @@ public class ct_Vaothi implements Initializable {
     @FXML
     private JFXListView lv_dapan;
 
+    @FXML
+    private Text countDown;
+
     int i = 0;
     float diem=0;
     int rows, cols;
@@ -127,6 +129,7 @@ public class ct_Vaothi implements Initializable {
         String str = Items;
         String st2=str.replaceAll("[^0-9]", "");
         SetCauHoi(Integer.parseInt(st2) - 1, Integer.parseInt(st2) - 1);
+        i = Integer.parseInt(st2) - 1;
         int SoCauTraLoi = Integer.parseInt(st2) - 1;
         try{
             switch (CauTraLoi[i]){
@@ -157,40 +160,61 @@ public class ct_Vaothi implements Initializable {
         }
     }
 
-    public void chuyenCauHoi(){
+    public void updateCauTraLoi(){
         if (!rbt_Dapan1.isSelected() && !rbt_Dapan2.isSelected() && !rpt_Dapan3.isSelected() && !rpt_Dapan4.isSelected()){
             CauTraLoi[i] = "Null";
 //            System.out.println("Null");
         }
 
-           if (rbt_Dapan1.isSelected()) {
-               CauTraLoi[i] = "A";
+        if (rbt_Dapan1.isSelected()) {
+            CauTraLoi[i] = "A";
 //               System.out.println("A");
-           }
-           if (rbt_Dapan2.isSelected()) {
-               CauTraLoi[i] = "B";
-//               System.out.println("B");
-           }
-           if (rpt_Dapan3.isSelected()) {
-               CauTraLoi[i] = "C";
-//               System.out.println("C");
-           }
-           if (rpt_Dapan4.isSelected()) {
-               CauTraLoi[i] = "D";
-//               System.out.println("D");
-           }
-
-        if (i >= 19){
-            btn_done.setVisible(true);
-            btn_next.setDisable(true);
-            i = 19;
         }
-        rbt_Dapan1.setSelected(false);
-        rbt_Dapan2.setSelected(false);
-        rpt_Dapan3.setSelected(false);
-        rpt_Dapan4.setSelected(false);
+        if (rbt_Dapan2.isSelected()) {
+            CauTraLoi[i] = "B";
+//               System.out.println("B");
+        }
+        if (rpt_Dapan3.isSelected()) {
+            CauTraLoi[i] = "C";
+//               System.out.println("C");
+        }
+        if (rpt_Dapan4.isSelected()) {
+            CauTraLoi[i] = "D";
+//               System.out.println("D");
+        }
+
+        lv_dapan.getItems().clear();
+        SetListCauTraLoi();
+    }
+
+    public void chuyenCauHoi(){
         SetCauHoi(++i, i);
-//        System.out.println(i);
+        System.out.println("i = "+i);
+        switch (CauTraLoi[i]){
+            case "A" :
+                rbt_Dapan1.setSelected(true);
+                break;
+            case "B":
+                rbt_Dapan2.setSelected(true);
+                break;
+            case "C":
+                rpt_Dapan3.setSelected(true);
+                break;
+            case "D":
+                rpt_Dapan4.setSelected(true);
+                break;
+            case "Null":
+                rbt_Dapan1.setSelected(false);
+                rbt_Dapan2.setSelected(false);
+                rpt_Dapan3.setSelected(false);
+                rpt_Dapan4.setSelected(false);
+                break;
+        }
+        if (i == 18){
+            btn_next.setDisable(true);
+            i = 18;
+        }
+//        System.out.println(i);x1
         if (i > 0){
             btn_previous.setVisible(true);
         }
@@ -200,6 +224,7 @@ public class ct_Vaothi implements Initializable {
     }
 
     public void previous(){
+        btn_next.setDisable(false);
         SetCauHoi(--i, i);
         if (i == 0){
             btn_previous.setVisible(false);
@@ -230,60 +255,108 @@ public class ct_Vaothi implements Initializable {
     }
 
     public void tinhDiem(){
-        if (!rbt_Dapan1.isSelected() && !rbt_Dapan2.isSelected() && !rpt_Dapan3.isSelected() && !rpt_Dapan4.isSelected()){
-            CauTraLoi[i] = "Null";
-//            System.out.println("Null");
+        int socauchualam = 0;
+        for (String b:CauTraLoi){
+            if (b.equals("Null")){
+                socauchualam+=1;
+            }
         }
 
-        if (rbt_Dapan1.isSelected()) {
-            CauTraLoi[i] = "A";
-//               System.out.println("A");
-        }
-        if (rbt_Dapan2.isSelected()) {
-            CauTraLoi[i] = "B";
-//               System.out.println("B");
-        }
-        if (rpt_Dapan3.isSelected()) {
-            CauTraLoi[i] = "C";
-//               System.out.println("C");
-        }
-        if (rpt_Dapan4.isSelected()) {
-            CauTraLoi[i] = "D";
-//               System.out.println("D");
-        }
-        if (i < 20){
-            lb_CanhBao.setVisible(true);
+        if (socauchualam > 0){
+            ButtonType foo = new ButtonType("Ok tôi muốn nộp", ButtonBar.ButtonData.OK_DONE);
+            ButtonType bar = new ButtonType("Không tôi nhấn nhầm", ButtonBar.ButtonData.CANCEL_CLOSE);
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                    "Bạn còn " + socauchualam + " câu chưa làm, bạn có chắc chắn muốn nộp bài ?",
+                    foo, bar);
+
+            alert.setTitle("Xác nhận nộp bài");
+            Optional<ButtonType> result = alert.showAndWait();
+
+            if (result.orElse(bar) == foo) {
+                for (int h = 1; h < rows; h++) {
+                    Sheet sheet = readDataFromSever();
+                    DapAn.add(sheet.getCell(9, h).getContents());
+                }
+
+//            for (String a:DapAn) {
+//                System.out.printf(a);
+//            }
+//
+//            for (String b:CauTraLoi) {
+//                System.out.printf(b);
+//            }
+
+                System.out.println(DapAn.size());
+                System.out.println(CauTraLoi.length);
+
+                for (int j = 0; j < DapAn.size(); j++) {
+                    if (CauTraLoi[j].equals(DapAn.get(j))) {
+                        diem += 0.5;
+                    }
+                }
+
+                System.out.println(diem);
+                lbl_diem.setVisible(true);
+                txt_diem.setVisible(true);
+                txt_diem.setText(String.valueOf(diem) + " điểm");
+            }
         }
         else {
-            for (int h = 1; h < rows; h++) {
-                Sheet sheet = readDataFromSever();
-                DapAn.add(sheet.getCell(9, h).getContents());
-            }
+            ButtonType foo = new ButtonType("Ok tôi muốn nộp", ButtonBar.ButtonData.OK_DONE);
+            ButtonType bar = new ButtonType("Không tôi nhấn nhầm", ButtonBar.ButtonData.CANCEL_CLOSE);
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                    "Bạn có chắc chắn muốn nộp bài ?",
+                    foo, bar);
 
-            for (String a:DapAn) {
-                System.out.printf(a);
-            }
+            alert.setTitle("Xác nhận nộp bài");
+            Optional<ButtonType> result = alert.showAndWait();
 
-            for (String b:CauTraLoi) {
-                System.out.printf(b);
-            }
+            if (result.orElse(bar) == foo) {
+                for (int h = 1; h < rows; h++) {
+                    Sheet sheet = readDataFromSever();
+                    DapAn.add(sheet.getCell(9, h).getContents());
+                }
 
-            System.out.println(DapAn.size());
-            System.out.println(CauTraLoi.length);
+//            for (String a:DapAn) {
+//                System.out.printf(a);
+//            }
+//
+//            for (String b:CauTraLoi) {
+//                System.out.printf(b);
+//            }
 
-            for (int j = 0; j < DapAn.size(); j++) {
+                System.out.println(DapAn.size());
+                System.out.println(CauTraLoi.length);
+
+                for (int j = 0; j < DapAn.size(); j++) {
                     if (CauTraLoi[j].equals(DapAn.get(j))) {
-                    diem += 0.5;
+                        diem += 0.5;
+                    }
+                }
+
+                System.out.println(diem);
+                lbl_diem.setVisible(true);
+                txt_diem.setVisible(true);
+                txt_diem.setText(String.valueOf(diem) + " điểm");
+        }
+    }
+    }
+
+    public void setTime(){
+        try {
+            int min = 29, sec = 59;
+            for (int b = 0; b < 60; b ++){
+                sec = sec - 1;
+                Thread.sleep(1000);
+                countDown.setText(min + ":" + sec);
+                if (sec == 0){
+                    min = min - 1;
+                    sec = 59;
                 }
             }
-
-            System.out.println(CauTraLoi.length);
-            System.out.println(DapAn.size());
-
-            System.out.println(diem);
-            lbl_diem.setVisible(true);
-            txt_diem.setVisible(true);
-            txt_diem.setText(String.valueOf(diem) + " điểm");
+            thread.interrupt();
+        }catch (Exception Ex){
+            Ex.printStackTrace();
         }
     }
 
@@ -295,5 +368,7 @@ public class ct_Vaothi implements Initializable {
         SetCauHoi(0, i);
         SetListCauHoi();
         SetListCauTraLoi();
+        thread = new Thread(this::setTime);
+        thread.start();
     }
 }

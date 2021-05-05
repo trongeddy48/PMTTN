@@ -9,6 +9,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="902.0" prefWidth="1311.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.ct_Vaothi">
    <children>
@@ -33,13 +34,13 @@
          <font>
             <Font size="24.0" />
          </font></Label>
-      <RadioButton fx:id="rbt_Dapan1" layoutX="51.0" layoutY="284.0" mnemonicParsing="false">
+      <RadioButton fx:id="rbt_Dapan1" layoutX="51.0" layoutY="284.0" mnemonicParsing="false" onAction="#updateCauTraLoi">
          <toggleGroup>
             <ToggleGroup fx:id="dapan" />
          </toggleGroup></RadioButton>
-      <RadioButton fx:id="rbt_Dapan2" layoutX="51.0" layoutY="388.0" mnemonicParsing="false" toggleGroup="$dapan" />
-      <RadioButton fx:id="rpt_Dapan3" layoutX="51.0" layoutY="493.0" mnemonicParsing="false" toggleGroup="$dapan" />
-      <RadioButton fx:id="rpt_Dapan4" layoutX="51.0" layoutY="600.0" mnemonicParsing="false" toggleGroup="$dapan" />
+      <RadioButton fx:id="rbt_Dapan2" layoutX="51.0" layoutY="388.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
+      <RadioButton fx:id="rpt_Dapan3" layoutX="51.0" layoutY="493.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
+      <RadioButton fx:id="rpt_Dapan4" layoutX="51.0" layoutY="600.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
       <JFXButton fx:id="btn_next" layoutX="292.0" layoutY="771.0" onAction="#chuyenCauHoi" prefHeight="80.0" prefWidth="264.0" style="-fx-background-color: #42f5ec; -fx-background-radius: 30;" text="Câu Hỏi Tiếp Theo">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -97,5 +98,15 @@
          </font>
       </Label>
       <JFXListView fx:id="lv_dapan" layoutX="1199.0" layoutY="30.0" prefHeight="717.0" prefWidth="83.0" />
+      <Text layoutX="51.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian còn lại:" textAlignment="CENTER" wrappingWidth="400.13671875">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+      <Text fx:id="countDown" layoutX="466.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29:59" wrappingWidth="142.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
