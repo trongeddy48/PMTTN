@@ -6,6 +6,8 @@
   <session-factory>
     <property name="connection.url">jdbc:sqlserver://localhost:1433;database=TTN</property>
     <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.username">sa</property>
+    <property name="connection.password"></property>
     <mapping class="MODEL.AdminEntity"/>
     <mapping class="MODEL.BaithiEntity"/>
     <mapping class="MODEL.BodeEntity"/>

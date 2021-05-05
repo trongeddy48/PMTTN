@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="902.0" prefWidth="1311.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.ct_Vaothi">
+   <children>
+      <ImageView fitHeight="902.0" fitWidth="1311.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="txt_cauhoi" layoutX="40.0" layoutY="70.0" prefHeight="127.0" prefWidth="699.0" text="Trong Word, muốn lưu hồ sơ với một tên khác, ta thực hiện:" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="txt_Dapan1" layoutX="79.0" layoutY="270.0" prefHeight="46.0" prefWidth="699.0" text="Trắng">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="txt_Dapan2" layoutX="79.0" layoutY="368.0" prefHeight="56.0" prefWidth="699.0" text="Xanh">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="txt_Dapan3" layoutX="79.0" layoutY="474.0" prefHeight="56.0" prefWidth="699.0" text="Vàng">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="txt_Dapan4" layoutX="79.0" layoutY="586.0" prefHeight="46.0" prefWidth="699.0" text="Tím">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <RadioButton fx:id="rbt_Dapan1" layoutX="51.0" layoutY="284.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="dapan" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbt_Dapan2" layoutX="51.0" layoutY="388.0" mnemonicParsing="false" toggleGroup="$dapan" />
+      <RadioButton fx:id="rpt_Dapan3" layoutX="51.0" layoutY="493.0" mnemonicParsing="false" toggleGroup="$dapan" />
+      <RadioButton fx:id="rpt_Dapan4" layoutX="51.0" layoutY="600.0" mnemonicParsing="false" toggleGroup="$dapan" />
+      <JFXButton fx:id="btn_next" layoutX="292.0" layoutY="771.0" onAction="#chuyenCauHoi" prefHeight="80.0" prefWidth="264.0" style="-fx-background-color: #42f5ec; -fx-background-radius: 30;" text="Câu Hỏi Tiếp Theo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/next_page_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btn_done" layoutX="572.0" layoutY="770.0" onAction="#tinhDiem" prefHeight="80.0" prefWidth="264.0" style="-fx-background-color: #45f542; -fx-background-radius: 30;" text="Kết Thúc Bài Thi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/checked_40px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label fx:id="txt_diem" layoutX="905.0" layoutY="762.0" prefHeight="127.0" prefWidth="392.0" text="10" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_diem" layoutX="847.0" layoutY="740.0" prefHeight="30.0" prefWidth="142.0" text="Điểm Của Bạn:" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <JFXListView fx:id="lv_CauHoi" layoutX="1116.0" layoutY="30.0" onMouseClicked="#getItemFromList" prefHeight="717.0" prefWidth="83.0" />
+      <JFXButton fx:id="btn_previous" layoutX="14.0" layoutY="771.0" onAction="#previous" prefHeight="80.0" prefWidth="264.0" style="-fx-background-color: #fcba03; -fx-background-radius: 30;" text="Câu Hỏi Trước Đó" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/back_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lb_CanhBao" layoutX="505.0" layoutY="365.0" onMouseClicked="#closeCanhBao" prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: #D67474; -fx-background-radius: 20;" text="Bạn Vẫn chưa Hoàn Thành Bài Thi. Nhấn Vào Đây Để Tắt Thông Báo" textAlignment="CENTER" visible="false" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/warning_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="lv_dapan" layoutX="1199.0" layoutY="30.0" prefHeight="717.0" prefWidth="83.0" />
+   </children>
+</AnchorPane>
