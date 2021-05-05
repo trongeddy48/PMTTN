@@ -14,7 +14,7 @@
 <AnchorPane prefHeight="902.0" prefWidth="1311.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.ct_Vaothi">
    <children>
       <ImageView fitHeight="902.0" fitWidth="1311.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="txt_cauhoi" layoutX="40.0" layoutY="70.0" prefHeight="127.0" prefWidth="699.0" text="Trong Word, muốn lưu hồ sơ với một tên khác, ta thực hiện:" wrapText="true">
+      <Label fx:id="txt_cauhoi" layoutX="40.0" layoutY="92.0" prefHeight="127.0" prefWidth="699.0" text="Trong Word, muốn lưu hồ sơ với một tên khác, ta thực hiện:" wrapText="true">
          <font>
             <Font name="System Bold" size="24.0" />
          </font></Label>
@@ -39,8 +39,8 @@
             <ToggleGroup fx:id="dapan" />
          </toggleGroup></RadioButton>
       <RadioButton fx:id="rbt_Dapan2" layoutX="51.0" layoutY="388.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
-      <RadioButton fx:id="rpt_Dapan3" layoutX="51.0" layoutY="493.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
-      <RadioButton fx:id="rpt_Dapan4" layoutX="51.0" layoutY="600.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
+      <RadioButton fx:id="rbt_Dapan3" layoutX="51.0" layoutY="493.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
+      <RadioButton fx:id="rbt_Dapan4" layoutX="51.0" layoutY="600.0" mnemonicParsing="false" onAction="#updateCauTraLoi" toggleGroup="$dapan" />
       <JFXButton fx:id="btn_next" layoutX="292.0" layoutY="771.0" onAction="#chuyenCauHoi" prefHeight="80.0" prefWidth="264.0" style="-fx-background-color: #42f5ec; -fx-background-radius: 30;" text="Câu Hỏi Tiếp Theo">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -72,7 +72,7 @@
          <font>
             <Font name="System Bold" size="20.0" />
          </font></Label>
-      <JFXListView fx:id="lv_CauHoi" layoutX="1116.0" layoutY="30.0" onMouseClicked="#getItemFromList" prefHeight="717.0" prefWidth="83.0" />
+      <JFXListView fx:id="lv_CauHoi" layoutX="1116.0" layoutY="30.0" onMouseClicked="#getItemFromList" prefHeight="670.0" prefWidth="83.0" />
       <JFXButton fx:id="btn_previous" layoutX="14.0" layoutY="771.0" onAction="#previous" prefHeight="80.0" prefWidth="264.0" style="-fx-background-color: #fcba03; -fx-background-radius: 30;" text="Câu Hỏi Trước Đó" visible="false">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -97,15 +97,15 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <JFXListView fx:id="lv_dapan" layoutX="1199.0" layoutY="30.0" prefHeight="717.0" prefWidth="83.0" />
-      <Text layoutX="51.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian còn lại:" textAlignment="CENTER" wrappingWidth="400.13671875">
+      <JFXListView fx:id="lv_dapan" layoutX="1199.0" layoutY="30.0" prefHeight="670.0" prefWidth="83.0" />
+      <Text layoutX="40.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian còn lại:" wrappingWidth="400.13671875">
          <font>
-            <Font size="46.0" />
+            <Font name="System Bold" size="46.0" />
          </font>
       </Text>
-      <Text fx:id="countDown" layoutX="466.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29:59" wrappingWidth="142.0">
+      <Text fx:id="countDown" layoutX="440.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29:59" wrappingWidth="142.0">
          <font>
-            <Font size="46.0" />
+            <Font name="System Bold" size="46.0" />
          </font>
       </Text>
    </children>

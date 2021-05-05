@@ -40,10 +40,10 @@ public class ct_Vaothi implements Initializable {
     private RadioButton rbt_Dapan2;
 
     @FXML
-    private RadioButton rpt_Dapan3;
+    private RadioButton rbt_Dapan3;
 
     @FXML
-    private RadioButton rpt_Dapan4;
+    private RadioButton rbt_Dapan4;
 
     @FXML
     private JFXButton btn_next;
@@ -140,28 +140,28 @@ public class ct_Vaothi implements Initializable {
                     rbt_Dapan2.setSelected(true);
                     break;
                 case "C":
-                    rpt_Dapan3.setSelected(true);
+                    rbt_Dapan3.setSelected(true);
                     break;
                 case "D":
-                    rpt_Dapan4.setSelected(true);
+                    rbt_Dapan4.setSelected(true);
                     break;
                 case "Null":
                     rbt_Dapan1.setSelected(false);
                     rbt_Dapan2.setSelected(false);
-                    rpt_Dapan3.setSelected(false);
-                    rpt_Dapan4.setSelected(false);
+                    rbt_Dapan3.setSelected(false);
+                    rbt_Dapan4.setSelected(false);
                     break;
             }
         }catch (Exception ex){
             rbt_Dapan1.setSelected(false);
             rbt_Dapan2.setSelected(false);
-            rpt_Dapan3.setSelected(false);
-            rpt_Dapan4.setSelected(false);
+            rbt_Dapan3.setSelected(false);
+            rbt_Dapan4.setSelected(false);
         }
     }
 
     public void updateCauTraLoi(){
-        if (!rbt_Dapan1.isSelected() && !rbt_Dapan2.isSelected() && !rpt_Dapan3.isSelected() && !rpt_Dapan4.isSelected()){
+        if (!rbt_Dapan1.isSelected() && !rbt_Dapan2.isSelected() && !rbt_Dapan3.isSelected() && !rbt_Dapan4.isSelected()){
             CauTraLoi[i] = "Null";
 //            System.out.println("Null");
         }
@@ -174,11 +174,11 @@ public class ct_Vaothi implements Initializable {
             CauTraLoi[i] = "B";
 //               System.out.println("B");
         }
-        if (rpt_Dapan3.isSelected()) {
+        if (rbt_Dapan3.isSelected()) {
             CauTraLoi[i] = "C";
 //               System.out.println("C");
         }
-        if (rpt_Dapan4.isSelected()) {
+        if (rbt_Dapan4.isSelected()) {
             CauTraLoi[i] = "D";
 //               System.out.println("D");
         }
@@ -198,16 +198,16 @@ public class ct_Vaothi implements Initializable {
                 rbt_Dapan2.setSelected(true);
                 break;
             case "C":
-                rpt_Dapan3.setSelected(true);
+                rbt_Dapan3.setSelected(true);
                 break;
             case "D":
-                rpt_Dapan4.setSelected(true);
+                rbt_Dapan4.setSelected(true);
                 break;
             case "Null":
                 rbt_Dapan1.setSelected(false);
                 rbt_Dapan2.setSelected(false);
-                rpt_Dapan3.setSelected(false);
-                rpt_Dapan4.setSelected(false);
+                rbt_Dapan3.setSelected(false);
+                rbt_Dapan4.setSelected(false);
                 break;
         }
         if (i == 18){
@@ -240,16 +240,16 @@ public class ct_Vaothi implements Initializable {
                 rbt_Dapan2.setSelected(true);
                 break;
             case "C":
-                rpt_Dapan3.setSelected(true);
+                rbt_Dapan3.setSelected(true);
                 break;
             case "D":
-                rpt_Dapan4.setSelected(true);
+                rbt_Dapan4.setSelected(true);
                 break;
             case "Null":
                 rbt_Dapan1.setSelected(false);
                 rbt_Dapan2.setSelected(false);
-                rpt_Dapan3.setSelected(false);
-                rpt_Dapan4.setSelected(false);
+                rbt_Dapan3.setSelected(false);
+                rbt_Dapan4.setSelected(false);
                 break;
         }
     }
